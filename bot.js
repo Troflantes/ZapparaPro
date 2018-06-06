@@ -32,11 +32,11 @@
 	})
 	
 	//TDG'nin kodu
-	if(props != null && props.help != null && props.help.name != null) {
+	if(typeof props !== 'undefined' && typeof props.help !== 'undefined' && typeof props.help.name !== 'undefined') {
 }
 
 	fs.readdir("./komutlar/", (err, files) => {
-    console.log(`Yuklendi ${files.length} komut.`)
+    	console.log(`Yuklendi ${files.length} komut.`)
 	if(err) console.log(err);
 	let jsfile = files.filter(f => f.split(".").pop() === "js");
 	if(jsfile.length <= 0){
