@@ -30,6 +30,10 @@
         dbl.postStats(bot.guilds.size)
         }, 1800000);
 	})
+	
+	//TDG'nin kodu
+	if(props != null && props.help != null && props.help.name != null) {
+}
 
 	fs.readdir("./komutlar/", (err, files) => {
     console.log(`Yuklendi ${files.length} komut.`)
